@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		700EE0F2234352FA002B98CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700EE0F1234352FA002B98CB /* AppDelegate.swift */; };
+		700EE0F4234352FA002B98CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700EE0F3234352FA002B98CB /* ViewController.swift */; };
+		700EE0F7234352FA002B98CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 700EE0F5234352FA002B98CB /* Main.storyboard */; };
+		700EE0FA234352FA002B98CB /* ProCalendar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 700EE0F8234352FA002B98CB /* ProCalendar.xcdatamodeld */; };
+		700EE0FC234352FC002B98CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 700EE0FB234352FC002B98CB /* Assets.xcassets */; };
+		700EE0FF234352FC002B98CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 700EE0FD234352FC002B98CB /* LaunchScreen.storyboard */; };
+		700EE10A234352FC002B98CB /* ProCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700EE109234352FC002B98CB /* ProCalendarTests.swift */; };
+		700EE115234352FC002B98CB /* ProCalendarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700EE114234352FC002B98CB /* ProCalendarUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		700EE106234352FC002B98CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 700EE0E6234352FA002B98CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 700EE0ED234352FA002B98CB;
+			remoteInfo = ProCalendar;
+		};
+		700EE111234352FC002B98CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 700EE0E6234352FA002B98CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 700EE0ED234352FA002B98CB;
+			remoteInfo = ProCalendar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		700EE0EE234352FA002B98CB /* ProCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		700EE0F1234352FA002B98CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		700EE0F3234352FA002B98CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		700EE0F6234352FA002B98CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		700EE0F9234352FA002B98CB /* ProCalendar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProCalendar.xcdatamodel; sourceTree = "<group>"; };
+		700EE0FB234352FC002B98CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		700EE0FE234352FC002B98CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		700EE100234352FC002B98CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		700EE105234352FC002B98CB /* ProCalendarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProCalendarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		700EE109234352FC002B98CB /* ProCalendarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProCalendarTests.swift; sourceTree = "<group>"; };
+		700EE10B234352FC002B98CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		700EE110234352FC002B98CB /* ProCalendarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProCalendarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		700EE114234352FC002B98CB /* ProCalendarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProCalendarUITests.swift; sourceTree = "<group>"; };
+		700EE116234352FC002B98CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		700EE0EB234352FA002B98CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		700EE102234352FC002B98CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		700EE10D234352FC002B98CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		700EE0E5234352FA002B98CB = {
+			isa = PBXGroup;
+			children = (
+				700EE0F0234352FA002B98CB /* ProCalendar */,
+				700EE108234352FC002B98CB /* ProCalendarTests */,
+				700EE113234352FC002B98CB /* ProCalendarUITests */,
+				700EE0EF234352FA002B98CB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		700EE0EF234352FA002B98CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				700EE0EE234352FA002B98CB /* ProCalendar.app */,
+				700EE105234352FC002B98CB /* ProCalendarTests.xctest */,
+				700EE110234352FC002B98CB /* ProCalendarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		700EE0F0234352FA002B98CB /* ProCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				700EE0F1234352FA002B98CB /* AppDelegate.swift */,
+				700EE0F3234352FA002B98CB /* ViewController.swift */,
+				700EE0F5234352FA002B98CB /* Main.storyboard */,
+				700EE0FB234352FC002B98CB /* Assets.xcassets */,
+				700EE0FD234352FC002B98CB /* LaunchScreen.storyboard */,
+				700EE100234352FC002B98CB /* Info.plist */,
+				700EE0F8234352FA002B98CB /* ProCalendar.xcdatamodeld */,
+			);
+			path = ProCalendar;
+			sourceTree = "<group>";
+		};
+		700EE108234352FC002B98CB /* ProCalendarTests */ = {
+			isa = PBXGroup;
+			children = (
+				700EE109234352FC002B98CB /* ProCalendarTests.swift */,
+				700EE10B234352FC002B98CB /* Info.plist */,
+			);
+			path = ProCalendarTests;
+			sourceTree = "<group>";
+		};
+		700EE113234352FC002B98CB /* ProCalendarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				700EE114234352FC002B98CB /* ProCalendarUITests.swift */,
+				700EE116234352FC002B98CB /* Info.plist */,
+			);
+			path = ProCalendarUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		700EE0ED234352FA002B98CB /* ProCalendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 700EE119234352FC002B98CB /* Build configuration list for PBXNativeTarget "ProCalendar" */;
+			buildPhases = (
+				700EE0EA234352FA002B98CB /* Sources */,
+				700EE0EB234352FA002B98CB /* Frameworks */,
+				700EE0EC234352FA002B98CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProCalendar;
+			productName = ProCalendar;
+			productReference = 700EE0EE234352FA002B98CB /* ProCalendar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		700EE104234352FC002B98CB /* ProCalendarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 700EE11C234352FC002B98CB /* Build configuration list for PBXNativeTarget "ProCalendarTests" */;
+			buildPhases = (
+				700EE101234352FC002B98CB /* Sources */,
+				700EE102234352FC002B98CB /* Frameworks */,
+				700EE103234352FC002B98CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				700EE107234352FC002B98CB /* PBXTargetDependency */,
+			);
+			name = ProCalendarTests;
+			productName = ProCalendarTests;
+			productReference = 700EE105234352FC002B98CB /* ProCalendarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		700EE10F234352FC002B98CB /* ProCalendarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 700EE11F234352FC002B98CB /* Build configuration list for PBXNativeTarget "ProCalendarUITests" */;
+			buildPhases = (
+				700EE10C234352FC002B98CB /* Sources */,
+				700EE10D234352FC002B98CB /* Frameworks */,
+				700EE10E234352FC002B98CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				700EE112234352FC002B98CB /* PBXTargetDependency */,
+			);
+			name = ProCalendarUITests;
+			productName = ProCalendarUITests;
+			productReference = 700EE110234352FC002B98CB /* ProCalendarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		700EE0E6234352FA002B98CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = Hoorad;
+				TargetAttributes = {
+					700EE0ED234352FA002B98CB = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					700EE104234352FC002B98CB = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 700EE0ED234352FA002B98CB;
+					};
+					700EE10F234352FC002B98CB = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 700EE0ED234352FA002B98CB;
+					};
+				};
+			};
+			buildConfigurationList = 700EE0E9234352FA002B98CB /* Build configuration list for PBXProject "ProCalendar" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 700EE0E5234352FA002B98CB;
+			productRefGroup = 700EE0EF234352FA002B98CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				700EE0ED234352FA002B98CB /* ProCalendar */,
+				700EE104234352FC002B98CB /* ProCalendarTests */,
+				700EE10F234352FC002B98CB /* ProCalendarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		700EE0EC234352FA002B98CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				700EE0FF234352FC002B98CB /* LaunchScreen.storyboard in Resources */,
+				700EE0FC234352FC002B98CB /* Assets.xcassets in Resources */,
+				700EE0F7234352FA002B98CB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		700EE103234352FC002B98CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		700EE10E234352FC002B98CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		700EE0EA234352FA002B98CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				700EE0FA234352FA002B98CB /* ProCalendar.xcdatamodeld in Sources */,
+				700EE0F4234352FA002B98CB /* ViewController.swift in Sources */,
+				700EE0F2234352FA002B98CB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		700EE101234352FC002B98CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				700EE10A234352FC002B98CB /* ProCalendarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		700EE10C234352FC002B98CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				700EE115234352FC002B98CB /* ProCalendarUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		700EE107234352FC002B98CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 700EE0ED234352FA002B98CB /* ProCalendar */;
+			targetProxy = 700EE106234352FC002B98CB /* PBXContainerItemProxy */;
+		};
+		700EE112234352FC002B98CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 700EE0ED234352FA002B98CB /* ProCalendar */;
+			targetProxy = 700EE111234352FC002B98CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		700EE0F5234352FA002B98CB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				700EE0F6234352FA002B98CB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		700EE0FD234352FC002B98CB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				700EE0FE234352FC002B98CB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		700EE117234352FC002B98CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		700EE118234352FC002B98CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		700EE11A234352FC002B98CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ProCalendar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ir.hooradramezani.ProCalendar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		700EE11B234352FC002B98CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ProCalendar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ir.hooradramezani.ProCalendar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		700EE11D234352FC002B98CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ProCalendarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ir.hooradramezani.ProCalendarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProCalendar.app/ProCalendar";
+			};
+			name = Debug;
+		};
+		700EE11E234352FC002B98CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ProCalendarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ir.hooradramezani.ProCalendarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProCalendar.app/ProCalendar";
+			};
+			name = Release;
+		};
+		700EE120234352FC002B98CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ProCalendarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ir.hooradramezani.ProCalendarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ProCalendar;
+			};
+			name = Debug;
+		};
+		700EE121234352FC002B98CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ProCalendarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ir.hooradramezani.ProCalendarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ProCalendar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		700EE0E9234352FA002B98CB /* Build configuration list for PBXProject "ProCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				700EE117234352FC002B98CB /* Debug */,
+				700EE118234352FC002B98CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		700EE119234352FC002B98CB /* Build configuration list for PBXNativeTarget "ProCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				700EE11A234352FC002B98CB /* Debug */,
+				700EE11B234352FC002B98CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		700EE11C234352FC002B98CB /* Build configuration list for PBXNativeTarget "ProCalendarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				700EE11D234352FC002B98CB /* Debug */,
+				700EE11E234352FC002B98CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		700EE11F234352FC002B98CB /* Build configuration list for PBXNativeTarget "ProCalendarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				700EE120234352FC002B98CB /* Debug */,
+				700EE121234352FC002B98CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		700EE0F8234352FA002B98CB /* ProCalendar.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				700EE0F9234352FA002B98CB /* ProCalendar.xcdatamodel */,
+			);
+			currentVersion = 700EE0F9234352FA002B98CB /* ProCalendar.xcdatamodel */;
+			path = ProCalendar.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 700EE0E6234352FA002B98CB /* Project object */;
+}
