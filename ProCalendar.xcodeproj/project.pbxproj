@@ -14,6 +14,8 @@
 		700EE0FF234352FC002B98CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 700EE0FD234352FC002B98CB /* LaunchScreen.storyboard */; };
 		700EE10A234352FC002B98CB /* ProCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700EE109234352FC002B98CB /* ProCalendarTests.swift */; };
 		700EE115234352FC002B98CB /* ProCalendarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700EE114234352FC002B98CB /* ProCalendarUITests.swift */; };
+		700EE12423439DC9002B98CB /* CalendarType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700EE12323439DC9002B98CB /* CalendarType.swift */; };
+		700EE12623439FC1002B98CB /* ProCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700EE12523439FC1002B98CB /* ProCalendarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		700EE110234352FC002B98CB /* ProCalendarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProCalendarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		700EE114234352FC002B98CB /* ProCalendarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProCalendarUITests.swift; sourceTree = "<group>"; };
 		700EE116234352FC002B98CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		700EE12323439DC9002B98CB /* CalendarType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarType.swift; sourceTree = "<group>"; };
+		700EE12523439FC1002B98CB /* ProCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProCalendarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 		700EE0F0234352FA002B98CB /* ProCalendar */ = {
 			isa = PBXGroup;
 			children = (
+				700EE122234397C8002B98CB /* Pro Calendar */,
 				700EE0F1234352FA002B98CB /* AppDelegate.swift */,
 				700EE0F3234352FA002B98CB /* MainViewController.swift */,
 				700EE0FB234352FC002B98CB /* Assets.xcassets */,
@@ -123,6 +128,15 @@
 				700EE116234352FC002B98CB /* Info.plist */,
 			);
 			path = ProCalendarUITests;
+			sourceTree = "<group>";
+		};
+		700EE122234397C8002B98CB /* Pro Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				700EE12323439DC9002B98CB /* CalendarType.swift */,
+				700EE12523439FC1002B98CB /* ProCalendarView.swift */,
+			);
+			path = "Pro Calendar";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +270,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				700EE0FA234352FA002B98CB /* ProCalendar.xcdatamodeld in Sources */,
+				700EE12423439DC9002B98CB /* CalendarType.swift in Sources */,
+				700EE12623439FC1002B98CB /* ProCalendarView.swift in Sources */,
 				700EE0F4234352FA002B98CB /* MainViewController.swift in Sources */,
 				700EE0F2234352FA002B98CB /* AppDelegate.swift in Sources */,
 			);
