@@ -17,6 +17,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+        UINavigationBar.appearance().tintColor = #colorLiteral(red: 0.1019607843, green: 0.7019607843, blue: 0.5803921569, alpha: 1)
+        
+        // MarK: - Set the window to root controller
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.backgroundColor = UIColor.white
+        window?.rootViewController = MainViewController()
+        window?.makeKeyAndVisible()
+        
         return true
     }
 
