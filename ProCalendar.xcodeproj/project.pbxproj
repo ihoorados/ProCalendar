@@ -18,6 +18,7 @@
 		700EE12623439FC1002B98CB /* ProCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700EE12523439FC1002B98CB /* ProCalendarView.swift */; };
 		700EE12C2343BDBF002B98CB /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700EE12B2343BDBF002B98CB /* CalendarViewModel.swift */; };
 		700EE12E2343BDCF002B98CB /* CalendarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700EE12D2343BDCF002B98CB /* CalendarModel.swift */; };
+		7056646C2344963500EAEFFF /* WeekDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7056646B2344963500EAEFFF /* WeekDay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		700EE12523439FC1002B98CB /* ProCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProCalendarView.swift; sourceTree = "<group>"; };
 		700EE12B2343BDBF002B98CB /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
 		700EE12D2343BDCF002B98CB /* CalendarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarModel.swift; sourceTree = "<group>"; };
+		7056646B2344963500EAEFFF /* WeekDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,12 +139,29 @@
 		700EE122234397C8002B98CB /* Pro Calendar */ = {
 			isa = PBXGroup;
 			children = (
-				700EE12323439DC9002B98CB /* CalendarType.swift */,
+				7056646A234494B500EAEFFF /* View */,
+				705664692344939000EAEFFF /* Setting */,
 				700EE12523439FC1002B98CB /* ProCalendarView.swift */,
 				700EE12B2343BDBF002B98CB /* CalendarViewModel.swift */,
 				700EE12D2343BDCF002B98CB /* CalendarModel.swift */,
 			);
 			path = "Pro Calendar";
+			sourceTree = "<group>";
+		};
+		705664692344939000EAEFFF /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				700EE12323439DC9002B98CB /* CalendarType.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		7056646A234494B500EAEFFF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7056646B2344963500EAEFFF /* WeekDay.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +296,7 @@
 			files = (
 				700EE12E2343BDCF002B98CB /* CalendarModel.swift in Sources */,
 				700EE12C2343BDBF002B98CB /* CalendarViewModel.swift in Sources */,
+				7056646C2344963500EAEFFF /* WeekDay.swift in Sources */,
 				700EE0FA234352FA002B98CB /* ProCalendar.xcdatamodeld in Sources */,
 				700EE12423439DC9002B98CB /* CalendarType.swift in Sources */,
 				700EE12623439FC1002B98CB /* ProCalendarView.swift in Sources */,
