@@ -20,14 +20,14 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        self.view.backgroundColor = UIColor.lightGray
+        self.view.backgroundColor = UIColor.white
         configureView()
         
     }
     
     fileprivate func configureView(){
         
-        self.title = "My Calender"
+        self.title = "Pro Calender"
         self.navigationController?.navigationBar.isTranslucent=false
         
         addProCalendarView()

@@ -109,7 +109,6 @@
 			children = (
 				700EE122234397C8002B98CB /* Pro Calendar */,
 				700EE0F1234352FA002B98CB /* AppDelegate.swift */,
-				700EE0F3234352FA002B98CB /* MainViewController.swift */,
 				700EE0FB234352FC002B98CB /* Assets.xcassets */,
 				700EE0FD234352FC002B98CB /* LaunchScreen.storyboard */,
 				700EE100234352FC002B98CB /* Info.plist */,
@@ -139,11 +138,11 @@
 		700EE122234397C8002B98CB /* Pro Calendar */ = {
 			isa = PBXGroup;
 			children = (
+				7056646D23449B0B00EAEFFF /* Model */,
 				7056646A234494B500EAEFFF /* View */,
+				7056646E23449B1B00EAEFFF /* View Model */,
+				7056646F23449B8B00EAEFFF /* Sence */,
 				705664692344939000EAEFFF /* Setting */,
-				700EE12523439FC1002B98CB /* ProCalendarView.swift */,
-				700EE12B2343BDBF002B98CB /* CalendarViewModel.swift */,
-				700EE12D2343BDCF002B98CB /* CalendarModel.swift */,
 			);
 			path = "Pro Calendar";
 			sourceTree = "<group>";
@@ -160,8 +159,33 @@
 			isa = PBXGroup;
 			children = (
 				7056646B2344963500EAEFFF /* WeekDay.swift */,
+				700EE12523439FC1002B98CB /* ProCalendarView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		7056646D23449B0B00EAEFFF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				700EE12D2343BDCF002B98CB /* CalendarModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7056646E23449B1B00EAEFFF /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				700EE12B2343BDBF002B98CB /* CalendarViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		7056646F23449B8B00EAEFFF /* Sence */ = {
+			isa = PBXGroup;
+			children = (
+				700EE0F3234352FA002B98CB /* MainViewController.swift */,
+			);
+			path = Sence;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

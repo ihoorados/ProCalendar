@@ -29,17 +29,17 @@ class WeekDayView: UIView {
     func configureView() {
         
         addSubview(weekDayStackView)
-        weekDayStackView.topAnchor.constraint(equalTo: topAnchor).isActive=true
-        weekDayStackView.leftAnchor.constraint(equalTo: leftAnchor).isActive=true
-        weekDayStackView.rightAnchor.constraint(equalTo: rightAnchor).isActive=true
-        weekDayStackView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive=true
+        weekDayStackView.topAnchor.constraint(equalTo: topAnchor).isActive = true
+        weekDayStackView.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
+        weekDayStackView.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
+        weekDayStackView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
         
         var weekDay = ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"]
         for i in 0..<7 {
             let lbl = UILabel()
             lbl.text = weekDay[i]
             lbl.textAlignment = .center
-            lbl.textColor = UIColor.green
+            lbl.textColor = UIColor.black
             weekDayStackView.addArrangedSubview(lbl)
         }
     }
