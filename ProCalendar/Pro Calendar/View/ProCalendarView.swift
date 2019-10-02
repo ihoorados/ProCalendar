@@ -15,7 +15,6 @@ class proCalenderView: UIView {
     
     
     // Mark: -Properties
-    
     lazy var weekDayView: WeekDayView = {
         let view = WeekDayView()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -40,11 +39,12 @@ class proCalenderView: UIView {
         weekDayView.rightAnchor.constraint(equalTo: self.rightAnchor, constant: 0.0).isActive = true
         weekDayView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 0.0).isActive = true
         weekDayView.heightAnchor.constraint(equalToConstant: 40).isActive = true
-
     }
     
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    
 }
