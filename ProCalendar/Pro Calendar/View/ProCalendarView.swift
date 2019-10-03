@@ -21,6 +21,11 @@ class proCalenderView: UIView {
         return view
     }()
     
+    lazy var monthDayView: MonthDayView = {
+       let view = MonthDayView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -30,17 +35,26 @@ class proCalenderView: UIView {
     
     fileprivate func configureView(){
         addWeekDayView()
+        addMonthDay()
     }
     
     
     fileprivate func addWeekDayView(){
         addSubview(weekDayView)
-        weekDayView.topAnchor.constraint(equalTo: self.topAnchor, constant: 8.0).isActive = true
-        weekDayView.rightAnchor.constraint(equalTo: self.rightAnchor, constant: 0.0).isActive = true
-        weekDayView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 0.0).isActive = true
+        weekDayView.topAnchor.constraint(equalTo: topAnchor, constant: 8.0).isActive = true
+        weekDayView.rightAnchor.constraint(equalTo: rightAnchor, constant: 0.0).isActive = true
+        weekDayView.leftAnchor.constraint(equalTo: leftAnchor, constant: 0.0).isActive = true
         weekDayView.heightAnchor.constraint(equalToConstant: 40).isActive = true
     }
     
+    fileprivate func addMonthDay(){
+        addSubview(monthDayView)
+        monthDayView.topAnchor.constraint(equalTo: weekDayView.bottomAnchor, constant: 8.0).isActive = true
+        monthDayView.rightAnchor.constraint(equalTo: self.rightAnchor, constant: 0.0).isActive = true
+        monthDayView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 0.0).isActive = true
+        monthDayView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 0.0).isActive = true
+        
+    }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

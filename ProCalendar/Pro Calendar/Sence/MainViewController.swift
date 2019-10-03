@@ -40,8 +40,7 @@ class MainViewController: UIViewController {
         proCalendar.topAnchor.constraint(equalTo: view.topAnchor, constant: 0.0).isActive = true
         proCalendar.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0.0).isActive = true
         proCalendar.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0.0).isActive = true
-        proCalendar.heightAnchor.constraint(equalToConstant: 40).isActive = true
-        
+        proCalendar.heightAnchor.constraint(equalToConstant: 350).isActive = true        
     }
 
 

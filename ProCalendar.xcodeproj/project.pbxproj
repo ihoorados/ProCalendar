@@ -18,8 +18,9 @@
 		700EE12623439FC1002B98CB /* ProCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700EE12523439FC1002B98CB /* ProCalendarView.swift */; };
 		700EE12C2343BDBF002B98CB /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700EE12B2343BDBF002B98CB /* CalendarViewModel.swift */; };
 		700EE12E2343BDCF002B98CB /* CalendarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700EE12D2343BDCF002B98CB /* CalendarModel.swift */; };
-		7056646C2344963500EAEFFF /* WeekDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7056646B2344963500EAEFFF /* WeekDay.swift */; };
+		7056646C2344963500EAEFFF /* WeekDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7056646B2344963500EAEFFF /* WeekDayView.swift */; };
 		705664712344CB5900EAEFFF /* MonthDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705664702344CB5900EAEFFF /* MonthDayCell.swift */; };
+		70E25B4F234606880003F891 /* MonthDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E25B4E234606880003F891 /* MonthDayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,8 +58,9 @@
 		700EE12523439FC1002B98CB /* ProCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProCalendarView.swift; sourceTree = "<group>"; };
 		700EE12B2343BDBF002B98CB /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
 		700EE12D2343BDCF002B98CB /* CalendarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarModel.swift; sourceTree = "<group>"; };
-		7056646B2344963500EAEFFF /* WeekDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDay.swift; sourceTree = "<group>"; };
+		7056646B2344963500EAEFFF /* WeekDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDayView.swift; sourceTree = "<group>"; };
 		705664702344CB5900EAEFFF /* MonthDayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthDayCell.swift; sourceTree = "<group>"; };
+		70E25B4E234606880003F891 /* MonthDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthDayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,7 +163,8 @@
 			isa = PBXGroup;
 			children = (
 				705664722344CB7100EAEFFF /* CollectionViewCell */,
-				7056646B2344963500EAEFFF /* WeekDay.swift */,
+				7056646B2344963500EAEFFF /* WeekDayView.swift */,
+				70E25B4E234606880003F891 /* MonthDayView.swift */,
 				700EE12523439FC1002B98CB /* ProCalendarView.swift */,
 			);
 			path = View;
@@ -329,9 +332,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70E25B4F234606880003F891 /* MonthDayView.swift in Sources */,
 				700EE12E2343BDCF002B98CB /* CalendarModel.swift in Sources */,
 				700EE12C2343BDBF002B98CB /* CalendarViewModel.swift in Sources */,
-				7056646C2344963500EAEFFF /* WeekDay.swift in Sources */,
+				7056646C2344963500EAEFFF /* WeekDayView.swift in Sources */,
 				700EE0FA234352FA002B98CB /* ProCalendar.xcdatamodeld in Sources */,
 				700EE12423439DC9002B98CB /* CalendarType.swift in Sources */,
 				700EE12623439FC1002B98CB /* ProCalendarView.swift in Sources */,
