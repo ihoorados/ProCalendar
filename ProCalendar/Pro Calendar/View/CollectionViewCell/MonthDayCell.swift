@@ -25,7 +25,7 @@ class daysCollectionViewCell: UICollectionViewCell {
         super.init(frame: frame)
         
         backgroundColor     = UIColor.clear
-        layer.cornerRadius  = 5
+        layer.cornerRadius  = self.layer.cornerRadius / 2
         layer.masksToBounds = true
         setupViews()
     }

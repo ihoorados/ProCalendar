@@ -49,7 +49,8 @@ class MonthDayView: UIView , UICollectionViewDelegate,UICollectionViewDataSource
         let cell = collectionView.cellForItem(at: indexPath)
         let lbl = cell?.subviews[1] as! UILabel
         lbl.textColor = UIColor.white
-        cell?.backgroundColor = #colorLiteral(red: 0.5725490451, green: 0, blue: 0.2313725501, alpha: 1)
+        cell?.backgroundColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1)
+        cell?.layer.cornerRadius = (cell?.layer.frame.width)! / 2
     }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
@@ -58,8 +59,8 @@ class MonthDayView: UIView , UICollectionViewDelegate,UICollectionViewDataSource
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = collectionView.frame.width/7 - 8
-        let height: CGFloat = 40
-        return CGSize(width: width, height: height)
+        //let height: CGFloat = 40
+        return CGSize(width: width, height: width)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {

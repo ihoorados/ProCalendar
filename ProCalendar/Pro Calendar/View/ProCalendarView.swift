@@ -50,8 +50,8 @@ class proCalenderView: UIView {
     fileprivate func addMonthDay(){
         addSubview(monthDayView)
         monthDayView.topAnchor.constraint(equalTo: weekDayView.bottomAnchor, constant: 8.0).isActive = true
-        monthDayView.rightAnchor.constraint(equalTo: self.rightAnchor, constant: 0.0).isActive = true
-        monthDayView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 0.0).isActive = true
+        monthDayView.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -8.0).isActive = true
+        monthDayView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 8.0).isActive = true
         monthDayView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 0.0).isActive = true
         
     }

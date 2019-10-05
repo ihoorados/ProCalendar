@@ -15,6 +15,9 @@ class CalendarViewModel{
     var numOfDaysInMonth = [31,28,31,30,31,30,31,31,30,31,30,31]
     var firstWeekDayOfMonth = 0   //(Sunday-Saturday 1-7)
     
+    
+    
+    
     init() {
         
         for index in 1...30 {
