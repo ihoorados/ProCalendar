@@ -8,21 +8,21 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController{
+    
     
     lazy var proCalendar: proCalenderView = {
         let view = proCalenderView()
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
-
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         self.view.backgroundColor = UIColor.white
         configureView()
-        
     }
     
     fileprivate func configureView(){
@@ -46,3 +46,11 @@ class MainViewController: UIViewController {
 
 }
 
+extension MainViewController : proCalendarDelegate {
+    
+    func didSelectItemAt(forIndex selectedIndex: Int) {
+        print(selectedIndex)
+    }
+    
+
+}

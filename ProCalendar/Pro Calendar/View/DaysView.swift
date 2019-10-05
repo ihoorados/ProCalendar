@@ -8,14 +8,21 @@
 
 import UIKit
 
-class MonthDayView: UIView , UICollectionViewDelegate,UICollectionViewDataSource ,UICollectionViewDelegateFlowLayout{
+protocol proCalendarDelegate {
+    func didSelectItemAt(forIndex selectedIndex: Int)
+}
 
+class DaysView: UIView , UICollectionViewDelegate,UICollectionViewDataSource ,UICollectionViewDelegateFlowLayout{
+
+    
+    var delegate = MainViewController()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         initConfigView()
         
     }
+    
     
     fileprivate func initConfigView(){
         
@@ -28,8 +35,7 @@ class MonthDayView: UIView , UICollectionViewDelegate,UICollectionViewDataSource
         myCollectionView.delegate = self
         myCollectionView.dataSource = self
         myCollectionView.register(daysCollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
-        
-
+        myCollectionView.reloadData()
 
     }
     
@@ -51,6 +57,8 @@ class MonthDayView: UIView , UICollectionViewDelegate,UICollectionViewDataSource
         lbl.textColor = UIColor.white
         cell?.backgroundColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1)
         cell?.layer.cornerRadius = (cell?.layer.frame.width)! / 2
+        delegate.didSelectItemAt(forIndex: indexPath.row)
+        print("collectionView : didDeselectItemAt")
     }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {

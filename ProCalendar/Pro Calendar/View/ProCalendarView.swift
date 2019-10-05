@@ -13,7 +13,6 @@ import UIKit
 // Mark: -Setup proCalendar Configuration
 class proCalenderView: UIView {
     
-    
     // Mark: -Properties
     lazy var weekDayView: WeekDayView = {
         let view = WeekDayView()
@@ -21,8 +20,8 @@ class proCalenderView: UIView {
         return view
     }()
     
-    lazy var monthDayView: MonthDayView = {
-       let view = MonthDayView()
+    lazy var monthDayView: DaysView = {
+       let view = DaysView()
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -31,7 +30,6 @@ class proCalenderView: UIView {
         super.init(frame: frame)
         configureView()
     }
-    
     
     fileprivate func configureView(){
         addWeekDayView()
@@ -62,3 +60,4 @@ class proCalenderView: UIView {
     
     
 }
+
