@@ -7,9 +7,18 @@
 //
 
 import Foundation
+import UIKit
 
 enum proCalendarType {
-    case monthly
     case weekly
+    case monthly
     case daily
 }
+
+struct ProCalendarOption {
+    
+    static var type = proCalendarType.self
+
+    
+}
+
