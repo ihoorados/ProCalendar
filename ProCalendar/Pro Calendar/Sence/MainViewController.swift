@@ -10,7 +10,6 @@ import UIKit
 
 class MainViewController: UIViewController{
     
-    
     lazy var proCalendar: proCalenderView = {
         let view = proCalenderView()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -51,6 +50,10 @@ extension MainViewController : proCalendarDelegate {
     func didSelectItemAt(forIndex selectedIndex: Int) {
         print(selectedIndex)
     }
+    func didDeselectItemAt(forIndex selectedIndex: Int){
+        print(selectedIndex)
+    }
+    
     
 
 }

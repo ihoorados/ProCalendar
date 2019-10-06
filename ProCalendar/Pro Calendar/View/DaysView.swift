@@ -10,6 +10,7 @@ import UIKit
 
 protocol proCalendarDelegate {
     func didSelectItemAt(forIndex selectedIndex: Int)
+    func didDeselectItemAt(forIndex selectedIndex: Int)
 }
 
 class DaysView: UIView , UICollectionViewDelegate,UICollectionViewDataSource ,UICollectionViewDelegateFlowLayout{
@@ -58,11 +59,10 @@ class DaysView: UIView , UICollectionViewDelegate,UICollectionViewDataSource ,UI
         cell?.backgroundColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1)
         cell?.layer.cornerRadius = (cell?.layer.frame.width)! / 2
         delegate.didSelectItemAt(forIndex: indexPath.row)
-        print("collectionView : didDeselectItemAt")
     }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
-//        let cell = collectionView.cellForItem(at: indexPath)
+        delegate.didDeselectItemAt(forIndex: indexPath.row)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
