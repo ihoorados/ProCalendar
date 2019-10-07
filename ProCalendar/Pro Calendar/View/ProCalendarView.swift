@@ -61,3 +61,16 @@ class proCalenderView: UIView {
     
 }
 
+
+extension proCalenderView : proCalendarDelegate {
+    
+    func didSelectItemAt(forIndex selectedIndex: Int) {
+        print(selectedIndex)
+    }
+    func didDeselectItemAt(forIndex selectedIndex: Int){
+        print(selectedIndex)
+    }
+    
+    
+    
+}

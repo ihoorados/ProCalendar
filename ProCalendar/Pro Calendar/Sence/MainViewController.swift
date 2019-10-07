@@ -44,16 +44,3 @@ class MainViewController: UIViewController{
 
 
 }
-
-extension MainViewController : proCalendarDelegate {
-    
-    func didSelectItemAt(forIndex selectedIndex: Int) {
-        print(selectedIndex)
-    }
-    func didDeselectItemAt(forIndex selectedIndex: Int){
-        print(selectedIndex)
-    }
-    
-    
-
-}

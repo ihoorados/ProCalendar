@@ -16,7 +16,7 @@ protocol proCalendarDelegate {
 class DaysView: UIView , UICollectionViewDelegate,UICollectionViewDataSource ,UICollectionViewDelegateFlowLayout{
 
     
-    var delegate = MainViewController()
+    var delegate = proCalenderView()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
