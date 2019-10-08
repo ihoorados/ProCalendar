@@ -9,19 +9,18 @@
 import UIKit
 
 protocol proCalendarDelegate {
-    func didSelectItemAt(forIndex selectedIndex: Int)
-    func didDeselectItemAt(forIndex selectedIndex: Int)
+    func didSelectItemAt(selectedIndex: Int)
+    func didDeselectItemAt(selectedIndex: Int)
 }
 
 class DaysView: UIView , UICollectionViewDelegate,UICollectionViewDataSource ,UICollectionViewDelegateFlowLayout{
 
-    
-    var delegate = proCalenderView()
+    var delegate:proCalendarDelegate?
+
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         initConfigView()
-        
     }
     
     
@@ -58,11 +57,14 @@ class DaysView: UIView , UICollectionViewDelegate,UICollectionViewDataSource ,UI
         lbl.textColor = UIColor.white
         cell?.backgroundColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1)
         cell?.layer.cornerRadius = (cell?.layer.frame.width)! / 2
-        delegate.didSelectItemAt(forIndex: indexPath.row)
+        
+        if self.delegate != nil {
+            delegate!.didSelectItemAt(selectedIndex: indexPath.row)
+        }
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
-        delegate.didDeselectItemAt(forIndex: indexPath.row)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

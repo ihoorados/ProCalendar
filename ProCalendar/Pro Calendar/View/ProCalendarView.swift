@@ -64,10 +64,10 @@ class proCalenderView: UIView {
 
 extension proCalenderView : proCalendarDelegate {
     
-    func didSelectItemAt(forIndex selectedIndex: Int) {
+    func didSelectItemAt(selectedIndex: Int) {
         print(selectedIndex)
     }
-    func didDeselectItemAt(forIndex selectedIndex: Int){
+    func didDeselectItemAt(selectedIndex: Int){
         print(selectedIndex)
     }
     
