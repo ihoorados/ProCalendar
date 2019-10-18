@@ -144,12 +144,12 @@
 		700EE122234397C8002B98CB /* Pro Calendar */ = {
 			isa = PBXGroup;
 			children = (
+				705664692344939000EAEFFF /* Setting */,
 				706B8FA92348993A00467F3A /* Extention */,
 				7056646D23449B0B00EAEFFF /* Model */,
 				7056646A234494B500EAEFFF /* View */,
 				7056646E23449B1B00EAEFFF /* View Model */,
 				7056646F23449B8B00EAEFFF /* Sence */,
-				705664692344939000EAEFFF /* Setting */,
 			);
 			path = "Pro Calendar";
 			sourceTree = "<group>";
@@ -167,7 +167,6 @@
 			children = (
 				705664722344CB7100EAEFFF /* CollectionViewCell */,
 				70A5A24A234B67D3000D723F /* View */,
-				700EE12523439FC1002B98CB /* ProCalendarView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -217,6 +216,7 @@
 			children = (
 				7056646B2344963500EAEFFF /* WeeksView.swift */,
 				70E25B4E234606880003F891 /* DaysView.swift */,
+				700EE12523439FC1002B98CB /* ProCalendarView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
