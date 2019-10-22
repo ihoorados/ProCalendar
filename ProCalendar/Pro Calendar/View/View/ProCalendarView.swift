@@ -26,6 +26,12 @@ class proCalenderView: UIView {
         return view
     }()
     
+    lazy var statuslabel:UILabel = {
+       let lbl = UILabel()
+        lbl.translatesAutoresizingMaskIntoConstraints = false
+        return lbl
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         configureView()
@@ -34,6 +40,11 @@ class proCalenderView: UIView {
     fileprivate func configureView(){
         addWeekDayView()
         addMonthDay()
+        
+        addSubview(statuslabel)
+        statuslabel.textColor = UIColor.blue
+        statuslabel.topAnchor.constraint(equalTo: monthDayView.bottomAnchor, constant: 16.0).isActive = true
+        statuslabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 8.0).isActive = true
     }
     
     
@@ -64,6 +75,9 @@ class proCalenderView: UIView {
 
 extension proCalenderView : proCalendarDelegate {
     
+    func setStatus(title: String) {
+        statuslabel.text = title
+    }
     func didSelectItemAt(selectedIndex: Int) {
         print(selectedIndex)
     }

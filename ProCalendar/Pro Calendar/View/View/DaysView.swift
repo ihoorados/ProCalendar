@@ -11,16 +11,19 @@ import UIKit
 protocol proCalendarDelegate {
     func didSelectItemAt(selectedIndex: Int)
     func didDeselectItemAt(selectedIndex: Int)
+    func setStatus(title:String)
 }
 
 class DaysView: UIView , UICollectionViewDelegate,UICollectionViewDataSource ,UICollectionViewDelegateFlowLayout{
 
     var delegate:proCalendarDelegate?
-
+    var viewModel:CalendarViewModel?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         initConfigView()
+        viewModel = CalendarViewModel()
+        delegate?.setStatus(title: "\(viewModel?.currentMonthIndex)-\(viewModel?.currentYear)")
     }
     
     

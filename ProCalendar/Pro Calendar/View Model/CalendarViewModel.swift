@@ -14,9 +14,8 @@ class CalendarViewModel{
     
     var numOfDaysInMonth = [31,28,31,30,31,30,31,31,30,31,30,31]
     var firstWeekDayOfMonth = 0   //(Sunday-Saturday 1-7)
-    
-    
-    
+    lazy var currentMonthIndex = Calendar.current.component(.month, from: Date()) - 1
+    lazy var currentYear = Calendar.current.component(.year, from: Date())
     
     init() {
         
@@ -24,6 +23,6 @@ class CalendarViewModel{
             let item1 = CalendarModel(id: 0, title: "\(index)")
             items.append(item1)
         }
-
+        
     }
 }
