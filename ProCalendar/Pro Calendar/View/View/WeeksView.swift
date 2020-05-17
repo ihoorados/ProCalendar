@@ -1,6 +1,8 @@
 //
 //  WeekDay.swift
 //  ProCalendar
+//  Su Mo Tu We Th Fr Sa
+//  weekdays View
 //
 //  Created by Hoorad on 10/2/19.
 //  Copyright © 2019 Hoorad. All rights reserved.
@@ -10,7 +12,6 @@ import Foundation
 import UIKit
 
 class WeekDayView: UIView {
-    
     
     // Mark: - Properties
     let weekDayStackView: UIStackView = {
@@ -27,7 +28,6 @@ class WeekDayView: UIView {
     }
     
     func configureView() {
-        
         addSubview(weekDayStackView)
         weekDayStackView.topAnchor.constraint(equalTo: topAnchor).isActive = true
         weekDayStackView.leftAnchor.constraint(equalTo: leftAnchor).isActive = true

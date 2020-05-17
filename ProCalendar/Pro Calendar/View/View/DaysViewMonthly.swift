@@ -1,6 +1,7 @@
 //
 //  MonthDayView.swift
 //  ProCalendar
+
 //
 //  Created by Hoorad on 10/3/19.
 //  Copyright © 2019 Hoorad. All rights reserved.
@@ -8,22 +9,33 @@
 
 import UIKit
 
-protocol proCalendarDelegate {
-    func didSelectItemAt(selectedIndex: Int)
-    func didDeselectItemAt(selectedIndex: Int)
-    func setStatus(title:String)
+protocol proCalendarDelegate: AnyObject{
+    func didSelectItemAt(_ selectedIndex: Int)
+    func didDeselectItemAt(_ selectedIndex: Int)
+    func setStatus(_ title:String)
 }
 
-class DaysView: UIView , UICollectionViewDelegate,UICollectionViewDataSource ,UICollectionViewDelegateFlowLayout{
+class DaysViewMonthly: UIView , UICollectionViewDelegate,UICollectionViewDataSource ,UICollectionViewDelegateFlowLayout{
 
     var delegate:proCalendarDelegate?
-    var viewModel:CalendarViewModel?
+    var viewModel:CalendarViewModel = CalendarViewModel()
+    
+    let myCollectionView: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        let myCollectionView=UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
+        myCollectionView.showsHorizontalScrollIndicator = false
+        myCollectionView.translatesAutoresizingMaskIntoConstraints = false
+        myCollectionView.backgroundColor=UIColor.clear
+        myCollectionView.allowsMultipleSelection = false
+        return myCollectionView
+    }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        
         initConfigView()
-        viewModel = CalendarViewModel()
-        delegate?.setStatus(title: "\(viewModel?.currentMonthIndex)-\(viewModel?.currentYear)")
+        self.delegate?.setStatus("Status Set")
     }
     
     
@@ -47,7 +59,6 @@ class DaysView: UIView , UICollectionViewDelegate,UICollectionViewDataSource ,UI
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
         let cell=collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! daysCollectionViewCell
         cell.backgroundColor = UIColor.clear
         cell.daylbl.text = "\(indexPath.row)"
@@ -60,11 +71,7 @@ class DaysView: UIView , UICollectionViewDelegate,UICollectionViewDataSource ,UI
         lbl.textColor = UIColor.white
         cell?.backgroundColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1)
         cell?.layer.cornerRadius = (cell?.layer.frame.width)! / 2
-        
-        if self.delegate != nil {
-            delegate!.didSelectItemAt(selectedIndex: indexPath.row)
-        }
-        
+        delegate?.setStatus("\(viewModel.currentMonthIndex)-\(viewModel.currentYear)")
     }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
@@ -84,16 +91,7 @@ class DaysView: UIView , UICollectionViewDelegate,UICollectionViewDataSource ,UI
         return 8.0
     }
     
-    let myCollectionView: UICollectionView = {
-        let layout = UICollectionViewFlowLayout()
-        layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-        let myCollectionView=UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
-        myCollectionView.showsHorizontalScrollIndicator = false
-        myCollectionView.translatesAutoresizingMaskIntoConstraints = false
-        myCollectionView.backgroundColor=UIColor.clear
-        myCollectionView.allowsMultipleSelection = false
-        return myCollectionView
-    }()
+
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
