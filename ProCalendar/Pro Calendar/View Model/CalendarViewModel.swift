@@ -16,6 +16,7 @@ class CalendarViewModel{
     var firstWeekDayOfMonth = 0   //(Sunday-Saturday 1-7)
     lazy var currentMonthIndex = Calendar.current.component(.month, from: Date()) - 1
     lazy var currentYear = Calendar.current.component(.year, from: Date())
+    lazy var currentDay = Calendar.current.component(.day, from: Date())
     
     init() {
         

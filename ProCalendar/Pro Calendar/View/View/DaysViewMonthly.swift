@@ -33,9 +33,8 @@ class DaysViewMonthly: UIView , UICollectionViewDelegate,UICollectionViewDataSou
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
         initConfigView()
-        self.delegate?.setStatus("Status Set")
+        delegate?.setStatus("Status Set")
     }
     
     
@@ -51,6 +50,7 @@ class DaysViewMonthly: UIView , UICollectionViewDelegate,UICollectionViewDataSou
         myCollectionView.dataSource = self
         myCollectionView.register(daysCollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
         myCollectionView.reloadData()
+        
 
     }
     
@@ -71,7 +71,7 @@ class DaysViewMonthly: UIView , UICollectionViewDelegate,UICollectionViewDataSou
         lbl.textColor = UIColor.white
         cell?.backgroundColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1)
         cell?.layer.cornerRadius = (cell?.layer.frame.width)! / 2
-        delegate?.setStatus("\(viewModel.currentMonthIndex)-\(viewModel.currentYear)")
+        delegate?.setStatus("\(viewModel.currentDay)-\(viewModel.currentMonthIndex)-\(viewModel.currentYear)")
     }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
